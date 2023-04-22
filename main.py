@@ -24,7 +24,7 @@ def main(kek: str) -> None:
         })#, proxies=proxies)
         if 'Request blocked.' in resp.text:
             raise "Failed to set Name."
-        print(resp.text)
+        print("set name to " + username)
         open("alts-named.txt", 'a+').write(f"{kek}\n")
     except Exception as ex:
         print(ex)
